@@ -1,0 +1,126 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const performances = [
+  {
+    month: "December",
+    description: "Toy Drive - Outreach Members collect toy donations for the Plymouth Coalition for the Homeless.",
+    events: [
+      {
+        name: "Heritage Museum & Gardens Holiday Performance",
+        date: "Wednesday 4th at 7:15pm",
+        location: "Heritage Museum & Gardens"
+      },
+      {
+        name: "Edaville Christmas Wonderland Performance",
+        date: "Friday 13th at 5:30pm",
+        location: "Edaville"
+      },
+      {
+        name: "Nursing Home Tour Holiday Performance",
+        date: "Saturday 14th",
+        location: "Various Locations"
+      }
+    ]
+  },
+  {
+    month: "January",
+    description: "Hands & Hearts for the Homeless Donations- Team members collect toiletries, hats, scarves, gloves, socks, underwear and more.",
+    events: []
+  },
+  {
+    month: "February",
+    description: "Valentine's Cards for the Nursing Homes- The Outreach Team makes cards and collects cards from the community to bring to local nursing homes.",
+    events: []
+  },
+  {
+    month: "March",
+    description: "Latham Centers Donations - The team collects school supplies for Latham Centers.",
+    events: [
+      {
+        name: "Outreach Team Showcase",
+        date: "Saturday 1st at 2:00pm",
+        location: "Cape Cod Community College"
+      },
+      {
+        name: "guiDANCE Experience Competition & Workshop",
+        date: "Friday 7th - Saturday 8th",
+        location: "TBA"
+      },
+      {
+        name: "Rock Your Socks Off Performance",
+        date: "Friday 21st",
+        location: "TBA"
+      }
+    ]
+  }
+];
+---
+
+<Layout title="Performances | Center Stage Outreach Team">
+  <div class="pt-24 pb-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <h1 class="text-4xl md:text-5xl font-bold text-center mb-8">Upcoming Performances</h1>
+      <p class="text-xl text-gray-700 text-center max-w-3xl mx-auto mb-16">
+        Join us at our upcoming performances and events. Our team brings joy and inspiration through dance to various community venues throughout the year.
+      </p>
+
+      <div class="max-w-4xl mx-auto">
+        {performances.map((month) => (
+          <div class="mb-16">
+            <div class="flex items-center mb-6">
+              <h2 class="text-3xl font-bold text-primary">{month.month}</h2>
+              {month.description && (
+                <div class="ml-6 px-4 py-2 bg-primary bg-opacity-10 rounded-full">
+                  <p class="text-primary text-sm">{month.description}</p>
+                </div>
+              )}
+            </div>
+
+            {month.events.length > 0 ? (
+              <div class="space-y-6">
+                {month.events.map((event) => (
+                  <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-xl font-bold mb-2">{event.name}</h3>
+                    <div class="flex flex-wrap gap-4 text-gray-600">
+                      <div class="flex items-center">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        </svg>
+                        {event.date}
+                      </div>
+                      <div class="flex items-center">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                        {event.location}
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            ) : (
+              <div class="bg-white rounded-lg shadow-md p-6">
+                <p class="text-gray-600">No scheduled performances this month. Check back soon!</p>
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+
+  <!-- Request a Show CTA -->
+  <section class="py-16 bg-primary text-white">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-6">Want to Host a Performance?</h2>
+      <p class="text-xl mb-8 max-w-2xl mx-auto">
+        We'd love to bring our performances to your venue or event. Get in touch with us to discuss the possibilities.
+      </p>
+      <a href="/request" class="inline-block bg-white text-primary hover:bg-gray-100 font-bold py-3 px-8 rounded-full transition duration-300">
+        Request a Show
+      </a>
+    </div>
+  </section>
+</Layout> 

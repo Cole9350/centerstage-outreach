@@ -1,0 +1,187 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const sponsorshipLevels = [
+  {
+    name: "Platinum Partner",
+    amount: "$5,000+",
+    benefits: [
+      "Logo prominently displayed on website",
+      "Recognition in all performance programs",
+      "Social media promotion",
+      "VIP tickets to annual showcase",
+      "Private performance for your organization",
+      "Featured in annual report",
+      "Sponsorship plaque"
+    ]
+  },
+  {
+    name: "Gold Partner",
+    amount: "$2,500+",
+    benefits: [
+      "Logo displayed on website",
+      "Recognition in performance programs",
+      "Social media mention",
+      "4 tickets to annual showcase",
+      "Featured in annual report",
+      "Sponsorship certificate"
+    ]
+  },
+  {
+    name: "Silver Partner",
+    amount: "$1,000+",
+    benefits: [
+      "Name listed on website",
+      "Recognition in performance programs",
+      "2 tickets to annual showcase",
+      "Listed in annual report"
+    ]
+  },
+  {
+    name: "Bronze Partner",
+    amount: "$500+",
+    benefits: [
+      "Name listed on website",
+      "Recognition in performance programs",
+      "Listed in annual report"
+    ]
+  }
+];
+
+const currentSponsors = [
+  {
+    name: "Plymouth Community Bank",
+    level: "Platinum Partner",
+    logo: "/images/sponsors/sponsor1.png"
+  },
+  {
+    name: "Cape Cod Dance Academy",
+    level: "Gold Partner",
+    logo: "/images/sponsors/sponsor2.png"
+  },
+  {
+    name: "Local Arts Foundation",
+    level: "Gold Partner",
+    logo: "/images/sponsors/sponsor3.png"
+  },
+  {
+    name: "Community Health Partners",
+    level: "Silver Partner",
+    logo: "/images/sponsors/sponsor4.png"
+  }
+];
+---
+
+<Layout title="Sponsors | Center Stage Outreach Team">
+  <div class="pt-24 pb-16">
+    <div class="container mx-auto px-4">
+      <h1 class="text-4xl md:text-5xl font-bold text-center mb-8">Our Sponsors</h1>
+      <p class="text-xl text-gray-700 text-center max-w-3xl mx-auto mb-16">
+        We are grateful for the generous support of our sponsors who help make our mission possible. Their commitment to our community enables us to continue making a positive impact through dance.
+      </p>
+
+      <!-- Current Sponsors -->
+      <section class="mb-20">
+        <h2 class="text-3xl font-bold text-center mb-12">Current Sponsors</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {currentSponsors.map((sponsor) => (
+            <div class="bg-white rounded-lg shadow-md p-6 text-center">
+              <img
+                src={sponsor.logo}
+                alt={sponsor.name}
+                class="h-24 object-contain mx-auto mb-4"
+              />
+              <h3 class="text-xl font-bold mb-2">{sponsor.name}</h3>
+              <p class="text-primary">{sponsor.level}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <!-- Sponsorship Levels -->
+      <section class="mb-20">
+        <h2 class="text-3xl font-bold text-center mb-12">Sponsorship Opportunities</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {sponsorshipLevels.map((level) => (
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+              <div class="bg-primary p-6 text-white text-center">
+                <h3 class="text-2xl font-bold mb-2">{level.name}</h3>
+                <p class="text-3xl font-bold">{level.amount}</p>
+              </div>
+              <div class="p-6">
+                <ul class="space-y-3">
+                  {level.benefits.map((benefit) => (
+                    <li class="flex items-start">
+                      <svg class="w-5 h-5 text-primary mt-1 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                      {benefit}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <!-- Why Sponsor Section -->
+      <section class="mb-20">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-3xl font-bold text-center mb-8">Why Sponsor Us?</h2>
+          <div class="grid md:grid-cols-3 gap-8">
+            <div class="text-center">
+              <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold mb-4">Community Impact</h3>
+              <p class="text-gray-700">
+                Support programs that make a real difference in our local community.
+              </p>
+            </div>
+            <div class="text-center">
+              <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold mb-4">Brand Visibility</h3>
+              <p class="text-gray-700">
+                Reach a diverse audience through our performances and events.
+              </p>
+            </div>
+            <div class="text-center">
+              <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold mb-4">Tax Benefits</h3>
+              <p class="text-gray-700">
+                Receive tax benefits as we are a registered 501(c)(3) organization.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact CTA -->
+      <section class="bg-primary text-white rounded-lg p-12 text-center">
+        <h2 class="text-3xl font-bold mb-6">Become a Sponsor Today</h2>
+        <p class="text-xl mb-8 max-w-2xl mx-auto">
+          Join our mission to make a difference through dance. Contact us to discuss sponsorship opportunities that align with your organization's values.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="mailto:sponsorship@centerstageoutreach.org" class="bg-white text-primary hover:bg-gray-100 font-bold py-3 px-8 rounded-full transition duration-300">
+            Contact Our Team
+          </a>
+          <a href="/about" class="border-2 border-white hover:bg-white hover:text-primary font-bold py-3 px-8 rounded-full transition duration-300">
+            Learn More About Us
+          </a>
+        </div>
+      </section>
+    </div>
+  </div>
+</Layout> 

@@ -1,5 +1,4 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
@@ -7,5 +6,176 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
-	<Welcome />
+	<!-- Hero Section -->
+	<section class="relative h-screen flex items-center justify-center text-white">
+		<div class="absolute inset-0 z-0">
+			<img 
+				src="/images/hero.jpg" 
+				alt="Dance performance" 
+				class="w-full h-full object-cover"
+			/>
+			<div class="absolute inset-0 bg-black bg-opacity-50"></div>
+		</div>
+		
+		<div class="relative z-10 text-center max-w-4xl mx-auto px-4">
+			<h1 class="text-5xl md:text-6xl font-bold mb-6">Center Stage Outreach Team</h1>
+			<p class="text-xl md:text-2xl mb-8">Building a world where dance heals, inspires and makes people happier.</p>
+			<div class="flex flex-wrap justify-center gap-4">
+				<a href="/programs" class="bg-primary hover:bg-primary-dark text-white font-bold py-3 px-8 rounded-full transition duration-300">
+					Our Programs
+				</a>
+				<a href="/request" class="bg-white hover:bg-gray-100 text-primary font-bold py-3 px-8 rounded-full transition duration-300">
+					Request a Show
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- Mission Section -->
+	<section class="py-20 bg-white">
+		<div class="container mx-auto px-4">
+			<div class="max-w-3xl mx-auto text-center">
+				<h2 class="text-4xl font-bold mb-8">Our Mission</h2>
+				<p class="text-xl text-gray-700 leading-relaxed">
+					The Center Stage Outreach Team, Inc is a 501(c)(3) organization committed to not only positively impact the lives of people in the community of which we serve, but to help our dancers gain personal growth through giving back, kindness, unity & leadership.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Vision & Goals Section -->
+	<section class="py-20 bg-gray-50">
+		<div class="container mx-auto px-4">
+			<div class="grid md:grid-cols-2 gap-12">
+				<div>
+					<h2 class="text-4xl font-bold mb-8">Our Vision</h2>
+					<p class="text-xl text-gray-700 leading-relaxed mb-8">
+						Building a world where dance heals, inspires and makes people happier. Happier people make better communities.
+					</p>
+				</div>
+				<div>
+					<h2 class="text-4xl font-bold mb-8">Our Goals</h2>
+					<ul class="space-y-4 text-xl text-gray-700">
+						<li class="flex items-start">
+							<svg class="w-6 h-6 text-primary mt-1 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+							</svg>
+							Provide community education
+						</li>
+						<li class="flex items-start">
+							<svg class="w-6 h-6 text-primary mt-1 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+							</svg>
+							Provide community dance instruction
+						</li>
+						<li class="flex items-start">
+							<svg class="w-6 h-6 text-primary mt-1 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+							</svg>
+							Provide uplifting community performances
+						</li>
+						<li class="flex items-start">
+							<svg class="w-6 h-6 text-primary mt-1 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+							</svg>
+							Offer seminars in social media safety, self-esteem building, and educational best practices
+						</li>
+						<li class="flex items-start">
+							<svg class="w-6 h-6 text-primary mt-1 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+							</svg>
+							Fundraise money for local charities
+						</li>
+						<li class="flex items-start">
+							<svg class="w-6 h-6 text-primary mt-1 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+							</svg>
+							Secure donations for local charities
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Latest Performances Section -->
+	<section class="py-20 bg-white">
+		<div class="container mx-auto px-4">
+			<h2 class="text-4xl font-bold mb-12 text-center">Upcoming Performances</h2>
+			<div class="grid md:grid-cols-3 gap-8">
+				<div class="bg-white rounded-lg shadow-md overflow-hidden">
+					<img src="/images/performance1.jpg" alt="Performance" class="w-full h-48 object-cover" />
+					<div class="p-6">
+						<h3 class="text-xl font-bold mb-2">Holiday Performance</h3>
+						<p class="text-gray-600 mb-4">Heritage Museum & Gardens</p>
+						<p class="text-gray-800">December 4th at 7:15pm</p>
+					</div>
+				</div>
+				<div class="bg-white rounded-lg shadow-md overflow-hidden">
+					<img src="/images/performance2.jpg" alt="Performance" class="w-full h-48 object-cover" />
+					<div class="p-6">
+						<h3 class="text-xl font-bold mb-2">Christmas Wonderland</h3>
+						<p class="text-gray-600 mb-4">Edaville</p>
+						<p class="text-gray-800">December 13th at 5:30pm</p>
+					</div>
+				</div>
+				<div class="bg-white rounded-lg shadow-md overflow-hidden">
+					<img src="/images/performance3.jpg" alt="Performance" class="w-full h-48 object-cover" />
+					<div class="p-6">
+						<h3 class="text-xl font-bold mb-2">Nursing Home Tour</h3>
+						<p class="text-gray-600 mb-4">Various Locations</p>
+						<p class="text-gray-800">December 14th</p>
+					</div>
+				</div>
+			</div>
+			<div class="text-center mt-12">
+				<a href="/performances" class="inline-block bg-primary hover:bg-primary-dark text-white font-bold py-3 px-8 rounded-full transition duration-300">
+					View All Performances
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- Impact Section -->
+	<section class="py-20 bg-gray-50">
+		<div class="container mx-auto px-4">
+			<h2 class="text-4xl font-bold mb-12 text-center">Our Impact</h2>
+			<div class="grid md:grid-cols-4 gap-8 text-center">
+				<div>
+					<div class="text-4xl font-bold text-primary mb-2">1000+</div>
+					<p class="text-gray-700">Community Members Reached</p>
+				</div>
+				<div>
+					<div class="text-4xl font-bold text-primary mb-2">50+</div>
+					<p class="text-gray-700">Annual Performances</p>
+				</div>
+				<div>
+					<div class="text-4xl font-bold text-primary mb-2">20+</div>
+					<p class="text-gray-700">Local Charities Supported</p>
+				</div>
+				<div>
+					<div class="text-4xl font-bold text-primary mb-2">100%</div>
+					<p class="text-gray-700">Volunteer-Driven</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- CTA Section -->
+	<section class="py-20 bg-primary text-white">
+		<div class="container mx-auto px-4 text-center">
+			<h2 class="text-4xl font-bold mb-8">Join Our Mission</h2>
+			<p class="text-xl mb-12 max-w-2xl mx-auto">
+				Help us make a difference in our community through the power of dance. Whether you're a dancer, sponsor, or supporter, there's a place for you in our family.
+			</p>
+			<div class="flex flex-wrap justify-center gap-4">
+				<a href="/about/members" class="bg-white text-primary hover:bg-gray-100 font-bold py-3 px-8 rounded-full transition duration-300">
+					Become a Member
+				</a>
+				<a href="/sponsors" class="border-2 border-white hover:bg-white hover:text-primary font-bold py-3 px-8 rounded-full transition duration-300">
+					Become a Sponsor
+				</a>
+			</div>
+		</div>
+	</section>
 </Layout>
