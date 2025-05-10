@@ -1,0 +1,49 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Team Navigation Structure
+
+## URL Structure
+- Board: `/about/board`
+- Staff: `/about/staff`
+- Members: `/about/members`
+
+## Navigation Menu
+Team pages should be accessible from:
+1. Main Navigation:
+   - About dropdown menu
+   - Direct links in footer
+
+2. Internal Navigation:
+   - Links between team pages
+   - Breadcrumb navigation
+   - Back to About page link
+
+## Page Hierarchy
+```
+About
+├── Board of Directors
+│   ├── Executive Committee
+│   ├── Board Members
+│   └── Board of Advisors
+├── Outreach Staff
+│   └── Staff Members Grid
+└── Team Members
+    ├── Boys Crew
+    ├── Senior Companies
+    ├── Teen Companies
+    ├── Junior Companies
+    ├── Mini Company
+    ├── Intermediate Teams
+    ├── Advanced Teams
+    ├── Outreach Reps
+    └── We Can Dance Crew
+```
+
+## Mobile Navigation
+- Collapsible sections for team lists
+- Sticky navigation for long pages
+- Easy access to all team sections
+- Clear visual hierarchy

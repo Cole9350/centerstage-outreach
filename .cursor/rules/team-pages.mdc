@@ -1,0 +1,43 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Team Pages Structure
+
+## Board of Directors
+The board page is located at [src/pages/about/board.astro](mdc:src/pages/about/board.astro) and contains three main sections:
+- Executive Committee (3 members)
+- Board Members (2 members)
+- Board of Advisors (4 members)
+
+Each member card includes:
+- Circular profile image (48x48)
+- Name in Impact font
+- Title/Role in gray text
+- Responsive grid layout (3 columns for Executive, 2 for Board, 4 for Advisors)
+
+## Outreach Staff
+The staff page is located at [src/pages/about/staff.astro](mdc:src/pages/about/staff.astro) and features:
+- Grid layout (3 columns on large screens, 2 on medium)
+- Circular profile images
+- Name in Impact font
+- Multiple roles/titles where applicable
+- 11 staff members total
+
+## Team Members
+The members page is located at [src/pages/about/members.astro](mdc:src/pages/about/members.astro) and includes:
+- 11 different teams/companies
+- Rectangular group photos (h-64)
+- Team names in Impact font
+- Member lists in gray text
+- Vertical layout with consistent spacing
+
+## Common Elements
+All team pages share:
+- Impact font for headings
+- Consistent spacing (py-12)
+- Responsive design
+- Placeholder images (to be replaced)
+- Container with padding (px-4)
+- Centered content

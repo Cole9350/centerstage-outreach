@@ -1,0 +1,44 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Team Images Guidelines
+
+## Image Placeholders
+All team pages currently use placeholder images that need to be replaced:
+- Path: `/images/placeholder.jpg`
+- Board/Staff: Circular images (w-48 h-48)
+- Members: Rectangular images (h-64)
+
+## Image Requirements
+When replacing placeholders:
+1. Board & Staff Photos:
+   - Square aspect ratio
+   - Minimum size: 400x400px
+   - Circular crop in UI
+   - Professional headshots preferred
+
+2. Team/Group Photos:
+   - Landscape orientation
+   - Minimum height: 400px
+   - Group shots showing all members
+   - Consistent style across teams
+
+## Image Naming Convention
+Use the following format for image files:
+- Board: `board-[lastname].jpg`
+- Staff: `staff-[lastname].jpg`
+- Teams: `team-[company-name].jpg`
+
+Example:
+- `/images/board-legrow.jpg`
+- `/images/staff-prout-leitao.jpg`
+- `/images/team-senior-sagamore.jpg`
+
+## Image Optimization
+Before adding images:
+1. Compress to reduce file size
+2. Convert to WebP format if possible
+3. Maintain aspect ratios
+4. Ensure consistent quality across all images
