@@ -3,137 +3,92 @@ import Layout from '../../layouts/Layout.astro';
 ---
 
 <Layout title="About Us | Center Stage Outreach Team">
-  <div class="pt-24 pb-16">
+  <div class="pt-16 pb-16">
+    <!-- Hero Image - Full Width -->
+    <div class="mb-16">
+      <img 
+        src="/images/2022-23-Outreach-no-logo.jpg" 
+        alt="Center Stage Outreach Team 2022-2023" 
+        class="w-full h-auto"
+      />
+    </div>
+
+    <!-- Content Container -->
     <div class="container mx-auto px-4">
-      <h1 class="text-4xl md:text-5xl font-bold text-center mb-8">About Us</h1>
-      <p class="text-xl text-gray-700 text-center max-w-3xl mx-auto mb-16">
-        Center Stage Outreach Team is a 501(c)(3) non-profit organization dedicated to making a positive impact through dance and community service.
+      <h1 class="text-4xl md:text-5xl font-impact text-center mb-8">About Us</h1>
+      <p class="text-xl text-secondary text-center max-w-3xl mx-auto mb-16 font-open-sans">
+        Center Stage Outreach Team is a 501(c)(3) non-profit organization dedicated to bringing the art of dance to everyone in the community.
       </p>
+    </div>
 
-      <!-- History Section -->
-      <section class="mb-20">
+    <!-- Our Story Section - Full Width -->
+    <section class="mb-20 bg-story-bg py-12">
+      <div class="container mx-auto px-4">
         <div class="max-w-4xl mx-auto">
-          <h2 class="text-3xl font-bold mb-8">Our History</h2>
-          <div class="prose prose-lg max-w-none">
-            <p class="mb-6">
-              Founded with a vision to unite dance and community service, Center Stage Outreach Team has grown from a small group of passionate dancers into a vibrant organization that touches countless lives in Plymouth and surrounding communities.
+          <h2 class="text-3xl font-impact mb-8">Our Story</h2>
+          <div class="prose prose-lg max-w-none font-open-sans">
+            <h3 class="text-2xl font-open-sans font-bold mb-4">Who We Are</h3>
+            <p class="mb-6 text-secondary text-lg">
+              The Center Stage "Outreach Team" was created to bring the art of dance to everyone in the community. The team is comprised of passionate students and teachers ranging from ages 5 through adult who dedicate their time for this unique cause. Our dancers and teachers alike capture the essence of our organization's beliefs and values and define its place in the community.
             </p>
-            <p class="mb-6">
-              Our journey began with simple performances at local nursing homes and has blossomed into a comprehensive program that includes dance education, community outreach, and charitable initiatives.
+
+            <h3 class="text-2xl font-open-sans font-bold mb-4">What We Do</h3>
+            <p class="mb-6 text-secondary text-lg">
+              The "Outreach Team" is out in the community providing education, instruction and performances for benefits, charities, church festivals, arts enrichment programs, public and private schools, public libraries, The Plymouth Council on Aging, Visiting Angels, "Walk For A Cure", nursing homes, "Dancing For A Cure" long term care pediatric units, Plymouth Philharmonic, parades, exhibitions, "The Jerry Lewis Telethon", and works closely with the special needs community and the Arc of Greater Plymouth. We perform yearly in the Boston Celtics pregame show and biannually on board Norwegian Cruise Lines. We have been guests of the Corporation of St. George in their Market Night Festival and Royal Naval Nights, and have received a proclamation for our work there.
             </p>
-            <p>
-              Today, we continue to grow and evolve, always staying true to our core mission of using dance as a vehicle for positive change in our community.
+
+            <h3 class="text-2xl font-open-sans font-bold mb-4">What We Offer</h3>
+            <p class="mb-6 text-secondary text-lg">
+              We offer dance education, performances, and lecture demonstrations in all dance disciplines, to all ages and abilities. The Outreach Team raises money for other charitable causes and provides scholarships to dancers in need.
+            </p>
+
+            <h3 class="text-2xl font-open-sans font-bold mb-4">Why We Do It</h3>
+            <p class="mb-6 text-secondary text-lg">
+              We love to educate, encourage, motivate, inspire, enlighten and entertain, bringing the joy of movement to children and adults through our love for the arts.
             </p>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Values Section -->
+    <!-- Team Navigation -->
+    <div class="container mx-auto px-4">
       <section class="mb-20">
-        <h2 class="text-3xl font-bold mb-12 text-center">Our Core Values</h2>
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div class="text-center">
-            <div class="w-16 h-16 mx-auto mb-6 bg-primary rounded-full flex items-center justify-center">
-              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-              </svg>
-            </div>
-            <h3 class="text-xl font-bold mb-4">Compassion</h3>
-            <p class="text-gray-700">
-              We lead with empathy and understanding in all our interactions.
-            </p>
-          </div>
-          <div class="text-center">
-            <div class="w-16 h-16 mx-auto mb-6 bg-primary rounded-full flex items-center justify-center">
-              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
-              </svg>
-            </div>
-            <h3 class="text-xl font-bold mb-4">Unity</h3>
-            <p class="text-gray-700">
-              We believe in the power of coming together to achieve common goals.
-            </p>
-          </div>
-          <div class="text-center">
-            <div class="w-16 h-16 mx-auto mb-6 bg-primary rounded-full flex items-center justify-center">
-              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-              </svg>
-            </div>
-            <h3 class="text-xl font-bold mb-4">Excellence</h3>
-            <p class="text-gray-700">
-              We strive for excellence in our performances and community service.
-            </p>
-          </div>
-          <div class="text-center">
-            <div class="w-16 h-16 mx-auto mb-6 bg-primary rounded-full flex items-center justify-center">
-              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" />
-              </svg>
-            </div>
-            <h3 class="text-xl font-bold mb-4">Service</h3>
-            <p class="text-gray-700">
-              We are dedicated to giving back and making a difference.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Team Navigation -->
-      <section class="mb-20">
-        <h2 class="text-3xl font-bold mb-12 text-center">Meet Our Team</h2>
+        <h2 class="text-3xl font-impact mb-12 text-center">Meet Our Team</h2>
         <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
           <a href="/about/board" class="group">
-            <div class="bg-white rounded-lg shadow-md overflow-hidden transition duration-300 group-hover:shadow-xl">
-              <div class="aspect-w-16 aspect-h-9">
-                <img src="/images/board.jpg" alt="Board of Directors" class="w-full h-full object-cover" />
-              </div>
-              <div class="p-6">
-                <h3 class="text-xl font-bold mb-2 group-hover:text-primary">Board of Directors</h3>
-                <p class="text-gray-700">Meet the dedicated individuals who guide our organization.</p>
-              </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden transition duration-300 group-hover:shadow-xl p-8 text-center h-[200px] flex flex-col justify-center">
+              <h3 class="text-xl font-impact mb-4 group-hover:text-primary">Board of Directors</h3>
+              <p class="text-secondary font-open-sans">Meet the dedicated individuals who guide our organization.</p>
             </div>
           </a>
           <a href="/about/staff" class="group">
-            <div class="bg-white rounded-lg shadow-md overflow-hidden transition duration-300 group-hover:shadow-xl">
-              <div class="aspect-w-16 aspect-h-9">
-                <img src="/images/staff.jpg" alt="Outreach Staff" class="w-full h-full object-cover" />
-              </div>
-              <div class="p-6">
-                <h3 class="text-xl font-bold mb-2 group-hover:text-primary">Outreach Staff</h3>
-                <p class="text-gray-700">Our talented team of instructors and coordinators.</p>
-              </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden transition duration-300 group-hover:shadow-xl p-8 text-center h-[200px] flex flex-col justify-center">
+              <h3 class="text-xl font-impact mb-4 group-hover:text-primary">Outreach Staff</h3>
+              <p class="text-secondary font-open-sans">Our talented team of instructors and coordinators.</p>
             </div>
           </a>
           <a href="/about/members" class="group">
-            <div class="bg-white rounded-lg shadow-md overflow-hidden transition duration-300 group-hover:shadow-xl">
-              <div class="aspect-w-16 aspect-h-9">
-                <img src="/images/members.jpg" alt="Team Members" class="w-full h-full object-cover" />
-              </div>
-              <div class="p-6">
-                <h3 class="text-xl font-bold mb-2 group-hover:text-primary">Team Members</h3>
-                <p class="text-gray-700">The heart of our organization - our amazing dancers.</p>
-              </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden transition duration-300 group-hover:shadow-xl p-8 text-center h-[200px] flex flex-col justify-center">
+              <h3 class="text-xl font-impact mb-4 group-hover:text-primary">Team Members</h3>
+              <p class="text-secondary font-open-sans">The heart of our organization - our amazing dancers.</p>
             </div>
           </a>
         </div>
       </section>
 
-      <!-- Join CTA -->
-      <section class="bg-primary text-white rounded-lg p-12 text-center">
-        <h2 class="text-3xl font-bold mb-6">Join Our Mission</h2>
-        <p class="text-xl mb-8 max-w-2xl mx-auto">
-          Whether you're a dancer, supporter, or community member, there are many ways to get involved with Center Stage Outreach Team.
+      <!-- Disclaimer -->
+      <div class="mt-16 text-sm text-secondary text-center max-w-3xl mx-auto font-open-sans">
+        <h4 class="text-xl font-impact mb-4">
+          CENTER STAGE OUTREACH TEAM
+        </h4>
+        <p class="mb-4">
+          © 2018 Center Stage Outreach Team inc.
         </p>
-        <div class="flex flex-wrap justify-center gap-4">
-          <a href="/about/members#join" class="bg-white text-primary hover:bg-gray-100 font-bold py-3 px-8 rounded-full transition duration-300">
-            Become a Member
-          </a>
-          <a href="/contact" class="border-2 border-white hover:bg-white hover:text-primary font-bold py-3 px-8 rounded-full transition duration-300">
-            Contact Us
-          </a>
-        </div>
-      </section>
+        <p class="text-xs">
+          Disclaimer: The resources provided are not meant to replace or provide legal, medical or governmental guidance. Contributors make no guarantees or assurances as to the successes one may or may not have by replicating these resources. Each person's results will be individual and will be based on a unique set of circumstances including effort, team, market, economy, local regulations and more. Please always refer to your local authorities, laws, and other advisers in the event of further questions.
+        </p>
+      </div>
     </div>
   </div>
 </Layout> 

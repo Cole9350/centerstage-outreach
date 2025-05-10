@@ -4,12 +4,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#007AFF',
-        secondary: '#5856D6',
-        accent: '#FF2D55',
+        primary: '#000000',
+        secondary: '#333333',
+        'story-bg': 'rgb(223, 234, 240)',
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
+        impact: ['Impact', 'sans-serif'],
+        'open-sans': ['"Open Sans"', 'sans-serif'],
       },
     },
   },
