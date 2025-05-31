@@ -14,7 +14,7 @@ const { title = "Center Stage Outreach Team Inc" } = Astro.props;
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" type="image/png" href="/favicon.png" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
@@ -41,7 +41,7 @@ const { title = "Center Stage Outreach Team Inc" } = Astro.props;
 	</head>
 	<body class="min-h-screen bg-white text-gray-900">
 		<Navigation />
-		<main>
+		<main class="w-full overflow-x-hidden">
 			<slot />
 		</main>
 		<Footer />
@@ -62,6 +62,41 @@ const { title = "Center Stage Outreach Team Inc" } = Astro.props;
 	body {
 		margin: 0;
 		padding: 0;
+		overflow-x: hidden;
+	}
+
+	/* Global container styles */
+	.container {
+		width: 100%;
+		max-width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: max(1rem, env(safe-area-inset-left));
+		padding-right: max(1rem, env(safe-area-inset-right));
+	}
+
+	@media (min-width: 640px) {
+		.container {
+			max-width: 640px;
+		}
+	}
+
+	@media (min-width: 768px) {
+		.container {
+			max-width: 768px;
+		}
+	}
+
+	@media (min-width: 1024px) {
+		.container {
+			max-width: 1024px;
+		}
+	}
+
+	@media (min-width: 1280px) {
+		.container {
+			max-width: 1280px;
+		}
 	}
 
 	@media (prefers-reduced-motion: reduce) {

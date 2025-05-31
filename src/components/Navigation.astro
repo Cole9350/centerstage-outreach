@@ -11,7 +11,13 @@ const navigation = [
       { name: 'Members', href: '/about/members' }
     ]
   },
-  { name: 'Programs', href: '/programs' },
+  {
+    name: 'Programs',
+    href: '/programs',
+    children: [
+      { name: 'Leadership', href: '/leadership' }
+    ]
+  },
   { name: 'Performances', href: '/performances' },
   { name: 'Gallery', href: '/gallery' },
   { name: 'Sponsors', href: '/sponsors' },
